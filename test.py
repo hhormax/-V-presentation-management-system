@@ -3,7 +3,7 @@ import mediapipe as mp
 import time
 import win32com.client
 Application = win32com.client.Dispatch("PowerPoint.Application")
-Presentation = Application.Presentations.Open("D:\\cwPy\\presa.pptx")
+Presentation = Application.Presentations.Open(".\presa.pptx")
 Presentation.SlideShowSettings.Run()
 
 mp_hands = mp.solutions.hands
